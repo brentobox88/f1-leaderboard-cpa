@@ -1,0 +1,279 @@
+<html>
+  <head>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap");
+
+body,
+html {
+  font-family: "Titillium Web", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: #f8f9fa;
+}
+
+/* VARIABLES */
+
+:root {
+  --mercedes-color: #0600ef;
+  --redbull-color: #0600ef;
+  --ferrari-color: #0600ef;
+  --hover-color: #0600ef;
+  --mclaren-color: #0600ef;
+  --racing-point-color: #0600ef;
+  --renault-color: #0600ef;
+}
+
+.table-container {
+  width: 60%;
+  min-width: 600px;
+  /* border: 1px solid black; */
+  margin: 100px auto;
+}
+
+.table-container th {
+  display: none;
+}
+
+.table-container tr {
+  display: flex;
+  padding: 0;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.table-container tr.table-content {
+  justify-content: space-between;
+  padding: 0;
+}
+
+.table-container tr.table-content td {
+  margin: 0 20px 0 10px;
+  font-size: 1.4rem;
+  text-align: center;
+  padding: 10px;
+}
+
+.table-container tr.table-content td .position {
+  border-right: 5px solid var(--mercedes-color);
+  padding-right: 10px;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.table-container tr.table-content td .driver-name {
+  margin-left: 10px;
+}
+
+.table-container tr.table-content td .driver-surname {
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+
+.table-container tr.table-content td .team {
+  font-size: 1rem;
+  color: #666;
+  margin-left: 10px;
+}
+
+.table-container tr.table-content td .points {
+  background-color: #ccc;
+  border-radius: 50px;
+  font-size: 1.1rem;
+  padding: 0 40px;
+}
+
+.table-container tr.table-content td i {
+  margin-left: 20px;
+  color: #e10600;
+  font-size: 18px;
+}
+
+/* HOVER */
+
+.table-container tr:hover {
+  background-color: var(--hover-color);
+  color: #ffffff;
+}
+
+.table-container tr:hover .points {
+  color: black;
+}
+
+/* DRIVER 2 */
+
+.table-container .table-content.driver2 .position {
+  border-right: 5px solid var(--redbull-color);
+}
+
+/* DRIVER 4 */
+
+.table-container .table-content.driver4 .position {
+  border-right: 5px solid var(--redbull-color);
+}
+
+/* DRIVER 5 */
+
+.table-container .table-content.driver5 .position {
+  border-right: 5px solid var(--ferrari-color);
+}
+
+/* DRIVER 6 */
+
+.table-container .table-content.driver6 .position {
+  border-right: 5px solid var(--mclaren-color);
+}
+
+/* DRIVER 7 */
+
+.table-container .table-content.driver7 .position {
+  border-right: 5px solid var(--racing-point-color);
+}
+
+/* DRIVER 8 */
+
+.table-container .table-content.driver8 .position {
+  border-right: 5px solid var(--renault-color);
+}
+
+/* DRIVER 9 */
+
+.table-container .table-content.driver9 .position {
+  border-right: 5px solid var(--racing-point-color);
+}
+
+/* DRIVER 10 WITH EXTRA MARGIN/PADDING TO COMPENSATE EXTRA DIGIT */
+
+.table-container .table-content.driver10 .position {
+  border-right: 5px solid var(--renault-color);
+  padding-right: 7px;
+}
+
+.table-container .table-content.driver10 td {
+  margin-left: 0;
+}
+
+
+    </style>
+  </head>
+
+<body>
+    <table class="table-container">
+      <tr class="table-content driver1">
+        <td>
+          <span class="position">1</span>
+          <span class="driver-name">Ernesto</span>
+          <span class="driver-surname">Fajardo</span>
+          <span class="team">Montreal,QC</span>
+        </td>
+        <td>
+          <span class="points">Gold</span
+          ><i class="fas fa-chevron-right"></i>
+        </td>
+      </tr>
+      <tr class="table-content driver2">
+        <td>
+          <span class="position">2</span>
+          <span class="driver-name">Brad</span>
+          <span class="driver-surname">Chapman</span>
+          <span class="team">Calgary, AB</span>
+        </td>
+        <td>
+          <span class="points">Silver</span
+          ><i class="fas fa-chevron-right"></i>
+        </td>
+      </tr>
+      <tr class="table-content driver3">
+        <td>
+          <span class="position">3</span>
+          <span class="driver-name">Kim</span>
+          <span class="driver-surname">Layton</span>
+          <span class="team">Calgary, AB</span>
+        </td>
+        <td>
+          <span class="points">Bronze</span
+          ><i class="fas fa-chevron-right"></i>
+        </td>
+      </tr>
+      <tr class="table-content driver4">
+        <td>
+          <span class="position">4</span>
+          <span class="driver-name">Alexander</span>
+          <span class="driver-surname">Albon</span>
+          <span class="team">Red Bull Racing</span>
+        </td>
+        <td>
+          <span class="points">48 PTS</span><i class="fas fa-chevron-right"></i>
+        </td>
+      </tr>
+      <tr class="table-content driver5">
+        <td>
+          <span class="position">5</span>
+          <span class="driver-name">Charles</span>
+          <span class="driver-surname">Leclerc</span>
+          <span class="team">Ferrari</span>
+        </td>
+        <td>
+          <span class="points">45 PTS</span><i class="fas fa-chevron-right"></i>
+        </td>
+      </tr>
+      <tr class="table-content driver6">
+        <td>
+          <span class="position">6</span>
+          <span class="driver-name">Lando</span>
+          <span class="driver-surname">Norris</span>
+          <span class="team">McLaren</span>
+        </td>
+        <td>
+          <span class="points">45 PTS</span><i class="fas fa-chevron-right"></i>
+        </td>
+      </tr>
+      <tr class="table-content driver7">
+        <td>
+          <span class="position">7</span>
+          <span class="driver-name">Lance</span>
+          <span class="driver-surname">Stroll</span>
+          <span class="team">Racing Point</span>
+        </td>
+        <td>
+          <span class="points">42 PTS</span><i class="fas fa-chevron-right"></i>
+        </td>
+      </tr>
+      <tr class="table-content driver8">
+        <td>
+          <span class="position">8</span>
+          <span class="driver-name">Daniel</span>
+          <span class="driver-surname">Ricciardo</span>
+          <span class="team">Renault</span>
+        </td>
+        <td>
+          <span class="points">33 PTS</span><i class="fas fa-chevron-right"></i>
+        </td>
+      </tr>
+      <tr class="table-content driver9">
+        <td>
+          <span class="position">9</span>
+          <span class="driver-name">Sergio</span>
+          <span class="driver-surname">Perez</span>
+          <span class="team">Racing Point</span>
+        </td>
+        <td>
+          <span class="points">33 PTS</span><i class="fas fa-chevron-right"></i>
+        </td>
+      </tr>
+      <tr class="table-content driver10">
+        <td>
+          <span class="position">10</span>
+          <span class="driver-name">Esteban</span>
+          <span class="driver-surname">Ocon</span>
+          <span class="team">Renault</span>
+        </td>
+        <td>
+          <span class="points">26 PTS</span><i class="fas fa-chevron-right"></i>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
